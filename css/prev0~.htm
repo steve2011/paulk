@@ -1,0 +1,212 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Screen Loader | CodingNepal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+      /*<link rel="stylesheet" href="style.css">  */
+
+  <style type="text/css">
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.loader{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.5s;
+}
+.loader .ring{
+  /*height: 45px;
+  width: 45px; */
+  height:100px;
+  width: 100px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .ring:after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ff3d00;
+  border-top-color: transparent;
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.content .image{
+  background: url("bg.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.content .text{
+  padding: 20px 50px;
+}
+.content .text .title{
+  padding: 10px 0 0 0;
+  font-size: 35px;
+  font-weight: 700;
+}
+.content .text p{
+  padding: 10px 0;
+  text-align: justify;
+}
+</style>
+
+
+      <style type="text/css">
+          .loader2 {
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid #FF7A59;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+      </style>
+   </head>
+   <body>
+      <div class="loader">
+         <div class="ring"></div>
+      </div>
+
+     <!-- <div class="content">
+         <div class="image"></div>
+         <div class="text">
+            <div class="title">
+               Screen Loader in HTML CSS & JavaScript
+            </div>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dicta corporis animi maxime provident quisquam soluta ducimus optio suscipit in aperiam a dolores vitae adipisci numquam, maiores quos. Nisi ducimus culpa, atque obcaecati quos, voluptatibus, in hic nobis omnis doloremque amet optio! Amet cumque temporibus error quia unde. Vero laborum suscipit ad fuga veniam, id, quo dolores officia, deserunt rerum eveniet perferendis reiciendis. Itaque nostrum incidunt quo! Aperiam sint quod inventore vitae, sapiente ducimus voluptas doloremque. Ducimus temporibus laboriosam illo quidem, laborum officiis esse maiores doloribus aperiam accusantium sed, ullam ad fugit quam at saepe animi optio repudiandae quaerat ipsam officia est corrupti magnam veniam. Enim voluptatum totam hic dignissimos nostrum magni at nobis quos dolorem, nihil? Ipsum sapiente tempora exercitationem obcaecati, odio ratione optio, voluptatem delectus accusamus dignissimos sunt minima beatae, eveniet. Sint, explicabo, quisquam! Est aspernatur officiis omnis laboriosam, at id aliquam ea quidem quae, architecto et nisi!
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id itaque excepturi officiis obcaecati accusamus alias, vero molestiae distinctio dolores quasi voluptatibus doloribus eum illo est qui, cum, deserunt eligendi at impedit quibusdam culpa suscipit. Ipsum officiis beatae quasi voluptatem magnam ut itaque consequatur quos maiores. Unde nihil aliquid, modi sapiente illo, quasi aspernatur, a cum error aut sint, placeat alias! Maxime voluptatum id tempora sed quia cupiditate laudantium veritatis minima! Impedit perspiciatis adipisci nesciunt est quod molestiae, eum minima animi, facilis fugiat ea ipsum a fuga distinctio labore aperiam officiis maxime voluptates! Ea assumenda quaerat ipsum fuga molestias illo, similique.
+            </p>
+         </div>
+      </div>-->
+
+      <div class="loader2"></div>
+
+
+      <script>
+         const loader = document.querySelector(".loader");
+         window.onload = function(){
+           setTimeout(function(){
+             loader.style.opacity = "0";
+             setTimeout(function(){
+               loader.style.display = "none";
+             }, 500);
+           },1500);
+         }
+      </script>
+
+       <script> /*
+         const loader2 = document.querySelector(".loader2");
+         window.onload = function(){
+           setTimeout(function(){
+             loader2.style.opacity = "0";
+             setTimeout(function(){
+               loader2.style.display = "none";
+             }, 500);
+           },1500);
+         }  */
+      </script>
+
+      /*https://www.codingnepalweb.com/loading-screen-animation-html-css-javascript/*/
+   </body>
+</html>
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><<!doctype html> <html lang="en"> <head> <title>screen loader | codingnepal</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width>Element <!doctype html> <html lang="en"> <head> <title>screen loader | codingnepal</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width</<!doctype html> <html lang="en"> <head> <title>screen loader | codingnepal</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width><br>
+<a name="1"></a><initial-scale=1"> <link rel="stylesheet" href="https>Element initial-scale=1"> <link rel="stylesheet" href="https</initial-scale=1"> <link rel="stylesheet" href="https><br>
+<a name="2"></a><div>Class </div>
+<br>
+<a name="3"></a><div class="loader">Class loader</div>
+<br>
+<a name="4"></a><div class="loader .ring">Class loader .ring</div>
+<br>
+<a name="5"></a><div class="loader .ring">Class loader .ring</div>
+<br>
+<a name="6"></a><100% (@keyframes rotate)>Element 100% (@keyframes rotate)</100% (@keyframes rotate)><br>
+<a name="7"></a><div class="content .image">Class content .image</div>
+<br>
+<a name="8"></a><div class="content .text">Class content .text</div>
+<br>
+<a name="9"></a><div class="content .text .title">Class content .text .title</div>
+<br>
+<a name="10"></a><div class="content .text p">Class content .text p</div>
+<br>
+<a name="11"></a><</style> <style type="text/css">  class="loader2">Element </style> <style type="text/css"> , Class loader2</</style> <style type="text/css"> ><br>
+<a name="12"></a><0% (@keyframes spinner)>Element 0% (@keyframes spinner)</0% (@keyframes spinner)><br>
+<a name="13"></a><100% (@keyframes spinner)>Element 100% (@keyframes spinner)</100% (@keyframes spinner)><br>
+<a name="14"></a><</style> </head> <body> <div class="loader"> <div class="ring"></div> </div>>Element </style> </head> <body> <div class="loader"> <div class="ring"></div> </div></</style> </head> <body> <div class="loader"> <div class="ring"></div> </div>><br>
+<a name="15"></a><<div class="content"> <div class="image"></div> <div class="text"> <div class="title"> screen loader in html css & javascript </div> <p> lorem ipsum dolor sit amet>Element <div class="content"> <div class="image"></div> <div class="text"> <div class="title"> screen loader in html css & javascript </div> <p> lorem ipsum dolor sit amet</<div class="content"> <div class="image"></div> <div class="text"> <div class="title"> screen loader in html css & javascript </div> <p> lorem ipsum dolor sit amet><br>
+<a name="16"></a><consectetur adipisicing elit class=" Tempora dicta corporis animi maxime provident quisquam soluta ducimus optio suscipit in aperiam a dolores vitae adipisci numquam">Element consectetur adipisicing elit, Class  Tempora dicta corporis animi maxime provident quisquam soluta ducimus optio suscipit in aperiam a dolores vitae adipisci numquam</consectetur adipisicing elit><br>
+<a name="17"></a><maiores quos class=" Nisi ducimus culpa">Element maiores quos, Class  Nisi ducimus culpa</maiores quos><br>
+<a name="18"></a><atque obcaecati quos>Element atque obcaecati quos</atque obcaecati quos><br>
+<a name="19"></a><voluptatibus>Element voluptatibus</voluptatibus><br>
+<a name="20"></a><in hic nobis omnis doloremque amet optio! amet cumque temporibus error quia unde class=" Vero laborum suscipit ad fuga veniam">Element in hic nobis omnis doloremque amet optio! amet cumque temporibus error quia unde, Class  Vero laborum suscipit ad fuga veniam</in hic nobis omnis doloremque amet optio! amet cumque temporibus error quia unde><br>
+<a name="21"></a><id>Element id</id><br>
+<a name="22"></a><quo dolores officia>Element quo dolores officia</quo dolores officia><br>
+<a name="23"></a><deserunt rerum eveniet perferendis reiciendis class=" Itaque nostrum incidunt quo! Aperiam sint quod inventore vitae">Element deserunt rerum eveniet perferendis reiciendis, Class  Itaque nostrum incidunt quo! Aperiam sint quod inventore vitae</deserunt rerum eveniet perferendis reiciendis><br>
+<a name="24"></a><sapiente ducimus voluptas doloremque class=" Ducimus temporibus laboriosam illo quidem">Element sapiente ducimus voluptas doloremque, Class  Ducimus temporibus laboriosam illo quidem</sapiente ducimus voluptas doloremque><br>
+<a name="25"></a><laborum officiis esse maiores doloribus aperiam accusantium sed>Element laborum officiis esse maiores doloribus aperiam accusantium sed</laborum officiis esse maiores doloribus aperiam accusantium sed><br>
+<a name="26"></a><ullam ad fugit quam at saepe animi optio repudiandae quaerat ipsam officia est corrupti magnam veniam class=" Enim voluptatum totam hic dignissimos nostrum magni at nobis quos dolorem">Element ullam ad fugit quam at saepe animi optio repudiandae quaerat ipsam officia est corrupti magnam veniam, Class  Enim voluptatum totam hic dignissimos nostrum magni at nobis quos dolorem</ullam ad fugit quam at saepe animi optio repudiandae quaerat ipsam officia est corrupti magnam veniam><br>
+<a name="27"></a><nihil? ipsum sapiente tempora exercitationem obcaecati>Element nihil? ipsum sapiente tempora exercitationem obcaecati</nihil? ipsum sapiente tempora exercitationem obcaecati><br>
+<a name="28"></a><odio ratione optio>Element odio ratione optio</odio ratione optio><br>
+<a name="29"></a><voluptatem delectus accusamus dignissimos sunt minima beatae>Element voluptatem delectus accusamus dignissimos sunt minima beatae</voluptatem delectus accusamus dignissimos sunt minima beatae><br>
+<a name="30"></a><eveniet class=" Sint">Element eveniet, Class  Sint</eveniet><br>
+<a name="31"></a><explicabo>Element explicabo</explicabo><br>
+<a name="32"></a><quisquam! est aspernatur officiis omnis laboriosam>Element quisquam! est aspernatur officiis omnis laboriosam</quisquam! est aspernatur officiis omnis laboriosam><br>
+<a name="33"></a><at id aliquam ea quidem quae>Element at id aliquam ea quidem quae</at id aliquam ea quidem quae><br>
+<a name="34"></a><architecto et nisi! </p> <p> lorem ipsum dolor sit amet>Element architecto et nisi! </p> <p> lorem ipsum dolor sit amet</architecto et nisi! </p> <p> lorem ipsum dolor sit amet><br>
+<a name="35"></a><consectetur adipisicing elit class=" Id itaque excepturi officiis obcaecati accusamus alias">Element consectetur adipisicing elit, Class  Id itaque excepturi officiis obcaecati accusamus alias</consectetur adipisicing elit><br>
+<a name="36"></a><vero molestiae distinctio dolores quasi voluptatibus doloribus eum illo est qui>Element vero molestiae distinctio dolores quasi voluptatibus doloribus eum illo est qui</vero molestiae distinctio dolores quasi voluptatibus doloribus eum illo est qui><br>
+<a name="37"></a><cum>Element cum</cum><br>
+<a name="38"></a><deserunt eligendi at impedit quibusdam culpa suscipit class=" Ipsum officiis beatae quasi voluptatem magnam ut itaque consequatur quos maiores. Unde nihil aliquid">Element deserunt eligendi at impedit quibusdam culpa suscipit, Class  Ipsum officiis beatae quasi voluptatem magnam ut itaque consequatur quos maiores. Unde nihil aliquid</deserunt eligendi at impedit quibusdam culpa suscipit><br>
+<a name="39"></a><modi sapiente illo>Element modi sapiente illo</modi sapiente illo><br>
+<a name="40"></a><quasi aspernatur>Element quasi aspernatur</quasi aspernatur><br>
+<a name="41"></a><a cum error aut sint>Element a cum error aut sint</a cum error aut sint><br>
+<a name="42"></a><placeat alias! maxime voluptatum id tempora sed quia cupiditate laudantium veritatis minima! impedit perspiciatis adipisci nesciunt est quod molestiae>Element placeat alias! maxime voluptatum id tempora sed quia cupiditate laudantium veritatis minima! impedit perspiciatis adipisci nesciunt est quod molestiae</placeat alias! maxime voluptatum id tempora sed quia cupiditate laudantium veritatis minima! impedit perspiciatis adipisci nesciunt est quod molestiae><br>
+<a name="43"></a><eum minima animi>Element eum minima animi</eum minima animi><br>
+<a name="44"></a><facilis fugiat ea ipsum a fuga distinctio labore aperiam officiis maxime voluptates! ea assumenda quaerat ipsum fuga molestias illo>Element facilis fugiat ea ipsum a fuga distinctio labore aperiam officiis maxime voluptates! ea assumenda quaerat ipsum fuga molestias illo</facilis fugiat ea ipsum a fuga distinctio labore aperiam officiis maxime voluptates! ea assumenda quaerat ipsum fuga molestias illo><br>
+<a name="45"></a><similique class=" </p> </div> </div>">Element similique, Class  </p> </div> </div></similique><br>
+<a name="46"></a><window class="onload = function()">Element window, Class onload = function()</window><br>
+<a name="47"></a><</script> <script> </script> </body> </html>>Element </script> <script> </script> </body> </html></</script> <script> </script> </body> </html>><br>
+
+</body></html>

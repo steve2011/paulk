@@ -1,0 +1,329 @@
+
+
+ body, html {
+           height: 100%;
+           animation: fadeInAnimation ease 3s;
+           animation-iteration-count:1;
+           animation-fill-mode:forwards;
+          }
+
+           @keyframes fadeInAnimation {
+               0% {
+                   opacity:0;
+               }
+               100% {
+                   opacity:1;
+               }
+
+           }
+
+            body {
+                background-image: url(img/bg-img.png);
+                background-size:100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+             .responsive {
+              width:100%;
+              height: auto;
+              position: relative;
+               }
+.team-member {
+
+background-color: grey; /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(white, grey);*/
+  background-image1: linear-gradient(black, white, black);
+  background: rgba(255, 255, 255, 1);
+}
+
+             .home {
+    height: 500px;
+    background-color: rgba(255, 0, 102, 1);
+    border: 3px solid #000;
+  }
+
+   .about {
+    height: 500px;
+    background-color: #CC3333;
+    margin-bottom: 10px;
+  }
+
+
+   .projects {
+    height: 500px;
+    background-color: yellow;
+  }
+
+  .involved {
+    height: 500px;
+    background-color: yellow;
+  }
+
+
+  .support {
+    height: 500px;
+    background-color: yellow;
+  }
+
+    .contact {
+    height: 500px;
+    background-color: #00FFCC;
+    margin-bottom: 10px;
+  }
+
+
+/***** NAVBAR ***/
+  .navbar {
+    background-color: #e95b05 !important;
+  }
+  .navbar{
+  position: fixed;
+  transition: 1s;
+}
+
+.navbar a {
+    color: #fff;
+}
+  .navbar a:hover {
+    background-color: rgba(0, 0, 51, 1);
+    color: #000;
+    border: 2px solid rgba(255, 204, 0, 1);
+    border-top-left-radius: 25px;
+    -webkit-border-top-radius:20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.5em;
+  }
+
+ .navbar-brand{
+          color: #fff;
+          font-size: 30px;
+          font-family: Germania;
+          cursor: pointer;
+      }
+
+        .navbar-brand:hover{
+          color: #000;
+          font-size: 30px;
+          font-family: Germania;
+          cursor: pointer;
+      }
+
+
+      .icon-bar{
+  background-color: #000;
+}
+.nav{
+   font-family: Lithos Pro;
+   color: #fff;
+   padding: 10px 20px;
+}
+ .nav li{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.nav li:after{
+  content: '';
+  display: block;
+    border-bottom: 2px solid #38fd07;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+.nav li:hover:after{
+   transform: scaleX(1);
+}
+
+#demo {
+  width: 100%;
+  height: auto;
+  background-color: rgba(22, 30, 56, 0.8);
+  overflow: hidden;
+  position: relative;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #006fbe;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top a{
+  text-decoration: none;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #0087e7;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+ /*--------------------------------------------------------------
+#  FOR PARALLAX STYLING
+--------------------------------------------------------------*/
+ /*
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  /*background-image: url(img-parrallax/img-parallax1.jpg);*/
+ /* background-image: url(img-parrallax/img-parallax1.png);
+  min-height: 100%;
+}
+
+.bgimg-2 {   /*ok*/
+ /* background-image: url(img-parrallax/img-parallax2.jpg);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(img-parrallax/img-parallax3.png);
+  min-height: 400px;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+/* END OF PARALLAX STYLING */
+
+  /*--------------------------------------------------------------
+# FOR CUSTOM SCROLL BAR STYLING
+--------------------------------------------------------------*/
+
+  .custom-scrollbar {
+  height: 70px;
+  overflow-y: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 0, 0, 1);
+  border-radius: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background1: #4A7856;
+  background: rgba(0, 0, 255, 1);
+  border-radius: 12px;
+}
+/* END OF CUSTOM SCROLL BAR */
+
+ /*--------------------------------------------------------------
+# FOR TEAM TOP PAGE
+--------------------------------------------------------------*/
+
+    .team-title {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+
+}
+   .team-title h4 {
+       color: #f4c545;
+font-family: 'Archivo Black', sans-serif;
+font-size: 1.3em;
+padding-top: 0 10px 0 0;
+
+}
+  .teamt {
+     border1: 1px solid #ff00ff;
+      background: rgba(0, 0, 0, 1);
+      color:white;
+      border-radius1: 25px;
+      transition-property: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+       transition-delay: 1s;
+       width: 250px;
+  }
+
+               .teamt:hover {
+                   background: rgba(51, 0, 51, 1);
+                   cursor: pointer;
+               }
+
+
+               /*
+           @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+             .teamt {
+               background: none;
+               border: none;
+             }
+
+}
+   */
+
+
+@media screen and (max-width: 600px) {
+ .team-title, .teamt {
+    display1: none;
+     background: none;
+     border: none;
+  }
+}
+
+   @media screen and (max-width: 600px) {
+ .teambg {
+
+     background: #000;
+
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# HOW TO UNDERLINE H1, H2, H3, H4, H5, H6
+--------------------------------------------------------------*/
+
+  h1 {
+  position: relative;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+h1:before {
+  position: absolute;
+  left:500px;
+  top: 1.2em;
+  height: 10;
+  width: 100px;
+  content: '';
+  border-top: 5px solid red;
+}
